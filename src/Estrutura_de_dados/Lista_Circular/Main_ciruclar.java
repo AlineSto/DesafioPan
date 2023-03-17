@@ -15,6 +15,9 @@ public class Main_ciruclar {
         System.out.println(minhaListaCiruclar);
 
         System.out.println(minhaListaCiruclar.get(0));
+        System.out.println(minhaListaCiruclar.get(1));
+        System.out.println(minhaListaCiruclar.get(2));
+        System.out.println(minhaListaCiruclar.get(3));
 
 
 
