@@ -13,8 +13,8 @@ public class EspacoEvogais {
         Scanner sc = new Scanner(System.in);
         String str = "";
         String[] strSplit = str.split(" ");
-       
-        char[] arrVogais = {'a', 'e', 'i', 'o', 'u'};
+
+        char[] arrVogais = {'a', 'e', 'i', 'o', 'u','A','E','I','O','U'};
         int espacosEmBranco = strSplit.length - 1, quantVogais = 0;
 
 
@@ -32,7 +32,7 @@ public class EspacoEvogais {
                     quantVogais++;
                 }
                 if (str.equals(" "))
-                {
+                {// erro aki, mais funcionou no console da DIO. VAI ENTENDER!
                     espacosEmBranco++;
                 }
 

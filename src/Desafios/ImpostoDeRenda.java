@@ -31,10 +31,16 @@ Imprima o texto "R$" seguido de um espaço e do valor total devido de Imposto de
 
  */
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Locale;
 import java.util.Scanner;
+
+//FUNCIONA!!!!!!!!!!!!!!
 public class ImpostoDeRenda {
     public static void main(String[] args) throws IOException {
         Scanner leitor = new Scanner(System.in);
+        leitor.useLocale(Locale.ENGLISH);
+        DecimalFormat valor1 = new DecimalFormat( " #,##0.00 " );
 
         double imposto;
 
@@ -44,22 +50,22 @@ public class ImpostoDeRenda {
 
        imposto=0d;
        double valor=0d;
+
         if( renda > 4500.00){
             valor = renda-4500.00;
-           imposto+= (valor*0.28)+350;
+           imposto += (valor*0.28)+350;
         }else if( renda > 3000.00){
-            valor= renda-300.00;
+            valor= renda-3000.00;
             imposto+=(valor*0.18)+80;
         }else if( renda > 2000.00){
             valor=renda-2000.00;
             imposto+=(valor*0.8);
         }
-
         if (imposto==0){
-            System.out.println("insento"+ imposto);
+            System.out.println(" INSENTO ");
         }
 
-
+        System.out.println( valor1.format(imposto));
 
 
     }
