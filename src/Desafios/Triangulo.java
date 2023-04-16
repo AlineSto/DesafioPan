@@ -59,3 +59,17 @@ public class Triangulo {
     }
 
 }
+/*
+outra forma de fazer, e passou no console do curso DIO
+Scanner leitor = new Scanner(System.in);
+double A = leitor.nextDouble();
+double B = leitor.nextDouble();
+double C = leitor.nextDouble();
+boolean triangulo = A < B + C && B < A + C && C < A + B;
+
+if(triangulo){
+    System.out.println("Perimetro= "+(A+B+C));
+}else{
+    System.out.println("Area= "+((A+B)*C)/2);
+}
+ */
